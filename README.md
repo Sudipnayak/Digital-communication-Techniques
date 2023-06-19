@@ -1,1 +1,17 @@
 # Digital-communication-Techniques
+
+I focused on simulating and analyzing various modulation techniques, including Amplitude Shift Keying (ASK), Frequency Shift Keying (FSK), and Phase Shift Keying (PSK) using MATLAB and Simulink, implemented modulation schemes for different digital data signals and simulated their transmission over noisy channels and evaluated performance metrics such as bit error rate (BER) and signal-to-noise ratio (SNR) to assess the robustness and efficiency of each modulation technique. 
+
+I designed a digital communication system based on Quadrature Amplitude Modulation (QAM), implemented QAM modulation and demodulation schemes and analyzed their performance in terms of error rates and data rates, simulated QAM signals transmission over additive white Gaussian noise (AWGN) channels and applied equalization techniques to mitigate channel impairments and enhanced my understanding of QAM systems, channel modeling, and equalization techniques using MATLAB.
+
+I processed on simulating and analyzing Pulse Code Modulation (PCM) systems. I implemented encoding and decoding algorithms for converting analog signals into digital form and vice versa, simulated PCM signals transmission over various channel models and evaluated performance metrics such as signal-to-noise ratio (SNR), quantization error, and signal reconstruction quality.
+
+ I designed a Differential Pulse Code Modulation (DPCM) system, implemented DPCM encoding and decoding algorithms to compress and transmit audio or image signals. I compared the performance of DPCM with conventional PCM in terms of compression ratio and signal fidelity also explored advanced techniques such as adaptive DPCM and Delta Modulation.
+
+I have implemented an Adaptive Delta Modulation (ADM) system using MATLAB and Simulink. I designed the ADM encoder and decoder using MATLAB scripts and simulated the system's behavior in Simulink. I evaluated the performance of ADM in terms of signal-to-noise ratio, quantization error, and bit error rate. I also explored adaptive algorithms, such as the Least Mean Square (LMS) algorithm, to improve the performance of ADM systems. This project provided practical experience in ADM system design and simulation using MATLAB and Simulink.
+
+These projects highlight my expertise in digital communication techniques and systems using MATLAB and Simulink. They demonstrate my ability to design, simulate, and analyze modulation schemes such as ASK, FSK, PSK, QAM, and demodulation techniques.In this project, I implemented an Adaptive Delta Modulation (ADM) system using MATLAB and Simulink. I designed the ADM encoder and decoder using MATLAB scripts and simulated the system's behavior in Simulink. I evaluated the performance of ADM in terms of signal-to-noise ratio, quantization error, and bit error rate. I also explored adaptive algorithms, such as the Least Mean Square (LMS) algorithm, to improve the performance of ADM systems. This project provided practical experience in ADM system design and simulation using MATLAB and Simulink.
+
+AND MANY MORE 
+
+These works highlight my expertise in digital communication techniques and systems using MATLAB and Simulink. They demonstrate my ability to design, simulate, and analyze modulation schemes such as ASK, FSK, PSK, QAM, and demodulation techniques. Additionally, they showcase my proficiency in implementing and evaluating PCM, DPCM, ADM, and other digital communication techniques in MATLAB and SImulink.
