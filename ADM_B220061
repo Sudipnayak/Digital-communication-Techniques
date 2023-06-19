@@ -1,0 +1,34 @@
+clc;
+clear all;
+close all;
+%% Input Signals, m(t).
+t = 0 : 2*pi/100 : 2*pi;
+mt = 3*sin(2*t) + 5*cos(t/2); % Sine wave with non-zero DC value.
+%% Step Size, S.
+quantizationLevels = 16;
+S = (max(mt) - min(mt)) / quantizationLevels;
+%% Modulate.
+totalSamples = length(mt) - 1;
+mqt = zeros(1, totalSamples); % Quantized Signal, mq(t).
+dk = zeros(1, totalSamples); % Output Binary Sequence, d[k].
+dt = 0; % Difference, d(t) = m(t) - mq(t).
+Sk = zeros(1, totalSamples); % Step Size, S[k].
+for n = 2 : totalSamples
+ dt = mt(n) - mqt(n);
+ if(dt >= 0)
+ dk(n) = 1;
+ else
+ dk(n) = -1;
+ end
+ Sk(n) = abs(Sk(n-1))*dk(n) + S*dk(n-1);
+ mqt(n+1) = mqt(n) + Sk(n);
+end
+%% Display Modulation Result.
+plot(t, mt,'r','LineWidth',2);
+hold on;
+stairs(t, mqt,'k','LineWidth',2);
+axis([t(1) t(end) (min(min(mqt), min(mt)) - 0.5) (max(max(mqt), max(mt)) + 0.5)]);
+title('Adaptive Delta Modulation', 'Fontsize', 14);
+xlabel('Time');
+ylabel('Amplitude');
+grid on;

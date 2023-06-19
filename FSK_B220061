@@ -1,0 +1,14 @@
+clc;
+t=0:0.001:1;
+fp=input("pulse freq=");
+fc1=input("carrier freq1=");
+fc2=input("carrier freq2=");
+a=square(2*pi*fp*t);
+subplot 311;
+plot(t,a);
+subplot 312;
+x=a.*sin(2*pi*fc1*t);
+w=(a-1)./(-2);
+z=w.*sin(2*pi*fc2*t);
+y=x+z;
+plot(t,y);
